@@ -205,13 +205,21 @@ Navbar
   padding: 0.5rem 2rem;
 }
 .nav-btn {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2rem 0.5rem 0rem;
   font-size: 1.5rem;
   color: var(--clr-primary-5);
+  cursor: pointer;
 }
 
 .nav-list {
   background: var(--clr-white);
+  transition: var(--transition);
+  height: 0;
+  overflow: hidden;
+}
+
+.show-links {
+  height: 280px;
 }
 
 .nav-list a {
@@ -250,6 +258,7 @@ Navbar
 
   .nav-list {
     display: flex;
+    height: auto;
   }
 
   .nav-list a {
